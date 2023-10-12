@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="mainHeader">
+        <h1 style="color: #00474b; text-shadow: 2px 2px 10px #03c3af;">SPLI +🧮</h1>
+        <h1 style="color: #00474b; text-shadow: 2px 2px 10px  #03c3af;">-🔢TTER</h1>
+    </div>
+    <div class="calcContainer">
+        <div class="calcContainerLeft">
+            <div class="bill">
+                <h3 class="titleHeader">Bill</h3>
+                <div class="inputImg">
+                    <img src="images/icon-dollar.svg" alt="" class="img">
+                    <input type="text" placeholder="0" id="billInput" class="input">
+                </div>
+
+            </div>
+            <div class="selectTip">
+                <h3 class="titleHeader">Select tip %</h3>
+                <div class="btns" on>
+                    <button class="btn" id="5">5%</button>
+                    <button class="btn" id="10">10%</button>
+                    <button class="btn" id="15">15%</button>
+                    <button class="btn" id="25">25%</button>
+                    <button class="btn" id="50">50%</button>
+                    <div class="btn custom">
+                        <input id="custom" placeholder="Custom"></input>
+                    </div>
+
+                </div>
+                <div class="numberOfPeople">
+                    <div class="numberOfpeopleTitle">
+                        <h3 class="titleHeader numberTitle">Number of people</h3>
+                        <p id="error">Can't be zero</p>
+
+                    </div>
+                    <div class="inputImg">
+                        <img src="images/icon-person.svg" class="img"> <input type="text" placeholder="0"
+                            id="peopleInput" class="input">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="calcContainerRight">
+            <div id="tipAmount" class="rightclass">
+                <div class="rightclassTitle">
+                    <h3 class="rightTitleHeader">Tip amount</h3>
+                    <span class="rightSpan">/ person</span>
+                </div>
+                <div class="rightclassAmount">
+                    <h2 id="changedAmount1">$0.00</h2>
+                </div>
+
+            </div>
+            <div id="total" class="rightclass">
+                <div class="rightclassTitle">
+                    <h3 class="rightTitleHeader">Total</h3>
+                    <span class="rightSpan">/ person</span>
+                </div>
+                <div class="rightclassAmount">
+                    <h2 id="changedAmount2">$0.00</h2>
+                </div>
+
+
+            </div>
+            <button class="resetBtn">RESET</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
